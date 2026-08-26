@@ -1,0 +1,633 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 200px;
+}
+
+h2 {
+    line-height: 1.3;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   GENEL BUTON
+   ========================= */
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   STORY 1
+   ========================= */
+
+#story {
+    display: none;
+    text-align: center;
+}
+
+#story img {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+/* =========================
+   STORY 2
+   ========================= */
+
+#story2 {
+    display: none;
+    text-align: center;
+}
+
+#story2 img {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+/* =========================
+   STORY 3
+   ========================= */
+
+#story3 {
+    display: none;
+    text-align: center;
+}
+
+#story3 img {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 40px auto 20px;
+    display: block;
+}
+
+
+/* =========================
+   STORY 4
+   ========================= */
+
+#story4 {
+    display: none;
+    text-align: center;
+}
+
+#story4 .photo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px auto;
+}
+
+#story4 .photo-row img {
+    width: 200px;
+    max-width: 42%;
+    border-radius: 30px;
+}
+
+#story4 .bottom-photo {
+    width: 350px;
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 30px auto 20px;
+    display: block;
+}
+
+
+/* =========================
+   STORY 5
+   ========================= */
+
+#story5 {
+    display: none;
+    text-align: center;
+}
+
+#story5 .photo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px auto;
+}
+
+#story5 .photo-row img {
+    width: 250px;
+    max-width: 42%;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   STORY 6
+   ========================= */
+
+#story6 {
+    display: none;
+    text-align: center;
+}
+
+#story6 img {
+    width: 350px;
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 40px auto 20px;
+    display: block;
+}
+
+
+/* =========================
+   STORY 7
+   ========================= */
+
+#story7 {
+    display: none;
+    text-align: center;
+}
+
+#story7 .photo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px auto 20px;
+}
+
+#story7 .photo-row img {
+    width: 250px;
+    max-width: 42%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#story7 .bottom-photo {
+    width: 180px;
+    max-width: 55%;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+/* =========================
+   STORY 8
+   ========================= */
+
+#story8 {
+    display: none;
+    text-align: center;
+}
+
+#story8 img {
+    width: 180px;
+    max-width: 55%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 30px auto;
+}
+
+
+/* =========================
+   STORY 9
+   ========================= */
+
+#story9 {
+    display: none;
+    text-align: center;
+}
+
+#story9 h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#story9 .story9-photos {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+#story9 .story9-photos img {
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+#story9 .story9-photos img:last-child {
+    grid-column: 1 / 3;
+}
+
+
+/* =========================
+   FINAL STORY 10
+   ========================= */
+
+#story10 {
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background: radial-gradient(
+        circle at center,
+        #3a0d24,
+        #14050d 75%
+    );
+    position: relative;
+}
+
+#story10 .final-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Final kalp */
+
+#story10 .heart {
+    font-size: 90px;
+    margin-bottom: 25px;
+    animation: heartbeat 1.4s infinite;
+    filter: drop-shadow(
+        0 0 15px rgba(255, 80, 130, 0.7)
+    );
+}
+
+
+/* Final başlık */
+
+#story10 h2 {
+    color: white;
+    font-size: 38px;
+    margin: 0 0 20px;
+    opacity: 0;
+    text-shadow: 0 0 15px rgba(255, 120, 160, 0.6);
+    animation: finalTitle 1.2s ease forwards;
+    animation-delay: 0.4s;
+}
+
+
+/* Final mesaj */
+
+#story10 p {
+    color: #f8dfe7;
+    font-size: 20px;
+    max-width: 500px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+    opacity: 0;
+    animation: finalText 1.2s ease forwards;
+    animation-delay: 1s;
+}
+
+
+/* Baştan izle */
+
+#restartButton {
+    background: white;
+    color: #3a0d24;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    animation: finalButton 1s ease forwards;
+    animation-delay: 1.7s;
+    transition: transform 0.25s ease;
+}
+
+#restartButton:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   UÇUŞAN KALPLER
+   ========================= */
+
+.floating-hearts {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-hearts span {
+    position: absolute;
+    bottom: -50px;
+    font-size: 20px;
+    opacity: 0;
+    color: #ff7fa5;
+    text-shadow: 0 0 10px rgba(255, 80, 130, 0.8);
+    animation: floatingHeart 7s linear infinite;
+}
+
+.floating-hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.floating-hearts span:nth-child(2) {
+    left: 25%;
+    animation-delay: 2s;
+}
+
+.floating-hearts span:nth-child(3) {
+    left: 40%;
+    animation-delay: 4s;
+}
+
+.floating-hearts span:nth-child(4) {
+    left: 55%;
+    animation-delay: 1s;
+}
+
+.floating-hearts span:nth-child(5) {
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.floating-hearts span:nth-child(6) {
+    left: 82%;
+    animation-delay: 5s;
+}
+
+.floating-hearts span:nth-child(7) {
+    left: 92%;
+    animation-delay: 2.5s;
+}
+
+.floating-hearts span:nth-child(8) {
+    left: 5%;
+    animation-delay: 6s;
+}
+
+
+/* =========================
+   ANİMASYONLAR
+   ========================= */
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+
+@keyframes finalTitle {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes finalText {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes finalButton {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes floatingHeart {
+
+    0% {
+        transform: translateY(0) scale(0.7);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-110vh) scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   TELEFON
+   ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        margin-top: 120px;
+        font-size: 30px;
+        padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 25px;
+        padding: 0 15px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 1.6;
+        padding: 0 15px;
+    }
+
+    button {
+        padding: 13px 24px;
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+
+    /* Story 4 */
+
+    #story4 .photo-row {
+        gap: 10px;
+    }
+
+    #story4 .photo-row img {
+        width: 42%;
+        max-width: 180px;
+    }
+
+    #story4 .bottom-photo {
+        width: 85%;
+    }
+
+
+    /* Story 5 */
+
+    #story5 .photo-row {
+        gap: 10px;
+    }
+
+    #story5 .photo-row img {
+        width: 42%;
+        max-width: 180px;
+    }
+
+
+    /* Story 7 */
+
+    #story7 .photo-row {
+        gap: 10px;
+        margin: 30px auto 20px;
+    }
+
+    #story7 .photo-row img {
+        width: 42%;
+        max-width: 180px;
+    }
+
+    #story7 .bottom-photo {
+        width: 55%;
+        max-width: 180px;
+    }
+
+
+    /* Story 8 */
+
+    #story8 img {
+        width: 55%;
+        max-width: 180px;
+    }
+
+
+    /* Story 9 */
+
+    #story9 .story9-photos {
+        width: 92%;
+        gap: 10px;
+    }
+
+    #story9 .story9-photos img {
+        width: 100%;
+        height: 150px;
+    }
+
+
+    /* Final */
+
+    #story10 {
+        min-height: 100vh;
+    }
+
+    #story10 .final-content {
+        padding: 20px;
+    }
+
+    #story10 .heart {
+        font-size: 70px;
+    }
+
+    #story10 h2 {
+        font-size: 28px;
+    }
+
+    #story10 p {
+        font-size: 17px;
+        max-width: 330px;
+    }
+
+}

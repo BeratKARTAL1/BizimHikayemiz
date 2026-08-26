@@ -1,4 +1,4 @@
-const music = new Audio("music/ortak.mp3");
+const music = new Audio("ortak.mp3");
 
 const startButton = document.getElementById("startButton");
 const story = document.getElementById("story");
